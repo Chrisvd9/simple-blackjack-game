@@ -13,9 +13,23 @@
 .titulo {
     text-align: center;
     background-color: rgb(36, 36, 36);
-    color: white;
     padding: 20px;
     font-size: 25px;
+}
+
+.titulo h2 {
+    animation: animate 4s linear infinite;
+    color: #0f0;
+}
+
+@keyframes animate 
+{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
 }
 
 .carta {
@@ -27,4 +41,8 @@
 
 #computadora-cartas, #jugador-cartas {
     height: 220px;
+}
+
+small {
+    color: rgb(0, 248, 0);
 }
